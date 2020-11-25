@@ -40,7 +40,7 @@ header form .container-header input {
 /*****************************************/
 
 main {
-   padding: 1% 5%;
+   padding: 0 5%;
 }
 
 main .jobs-accueil img {
@@ -93,6 +93,10 @@ main .jobs-accueil div ul {
 
    main .jobs-accueil div ul {
       display: flex;
+   }
+
+   main .jobs-accueil div ul li{
+      padding: 1%;
    }
 }
 

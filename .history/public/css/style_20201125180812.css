@@ -39,22 +39,17 @@ header form .container-header input {
 /* 02. Accueil                           */
 /*****************************************/
 
-main {
-   padding: 1% 5%;
-}
-
 main .jobs-accueil img {
    display: block;
    margin: 0 auto;
 }
 
 main .jobs-accueil div {
-   text-align: center;
+   margin: 0 auto;
 }
 
 main .jobs-accueil div ul {
    list-style-type: none;
-   padding: 0;
 }
 
 /*****************************************/
@@ -63,6 +58,7 @@ main .jobs-accueil div ul {
 /* Tablet 768px **************************/
 @media (min-width: 768px) {
 
+   /* 01. Accueil ************************/
    header form .container-header {
 
       display: flex;
@@ -77,23 +73,6 @@ main .jobs-accueil div ul {
       width: 30%;
    }
 
-   /* 01. Accueil ************************/
-   main .jobs-accueil img {
-      margin: 0;
-   }
-
-   main .jobs-accueil {
-      display: flex;
-      align-items: center;
-   }
-
-   main .jobs-accueil div {
-      padding-left: 10%;
-   }
-
-   main .jobs-accueil div ul {
-      display: flex;
-   }
 }
 
 /* Laptop 1024px *************************/

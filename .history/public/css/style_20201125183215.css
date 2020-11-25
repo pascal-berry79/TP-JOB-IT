@@ -40,7 +40,7 @@ header form .container-header input {
 /*****************************************/
 
 main {
-   padding: 1% 5%;
+   padding: 0 5%;
 }
 
 main .jobs-accueil img {
@@ -87,12 +87,9 @@ main .jobs-accueil div ul {
       align-items: center;
    }
 
-   main .jobs-accueil div {
-      padding-left: 10%;
-   }
-
    main .jobs-accueil div ul {
       display: flex;
+      padding-left: 25%;
    }
 }
 

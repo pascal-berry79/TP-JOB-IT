@@ -39,9 +39,7 @@ header form .container-header input {
 /* 02. Accueil                           */
 /*****************************************/
 
-main {
-   padding: 1% 5%;
-}
+
 
 main .jobs-accueil img {
    display: block;
@@ -78,6 +76,10 @@ main .jobs-accueil div ul {
    }
 
    /* 01. Accueil ************************/
+   main {
+      padding: 0 5%;
+   }
+
    main .jobs-accueil img {
       margin: 0;
    }
