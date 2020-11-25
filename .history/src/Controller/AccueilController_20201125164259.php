@@ -25,4 +25,6 @@ class AccueilController extends AbstractController
             'jobs' => $jobs,
         ]);
     }
+
+
 }

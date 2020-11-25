@@ -14,7 +14,7 @@ class AccueilController extends AbstractController
     /**
      * @Route("/", name="accueil")
      */
-    public function index(JobsRepository $JobsRepository, EntityManagerInterface $em): Response
+    public function index(EntityManagerInterface $emy): Response
     {
         // return $this->render('accueil/index.html.twig', [
         //     'controller_name' => 'AccueilController',
@@ -25,4 +25,6 @@ class AccueilController extends AbstractController
             'jobs' => $jobs,
         ]);
     }
+
+
 }

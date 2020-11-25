@@ -14,15 +14,17 @@ class AccueilController extends AbstractController
     /**
      * @Route("/", name="accueil")
      */
-    public function index(JobsRepository $JobsRepository, EntityManagerInterface $em): Response
+    public function index(EntityManagerInterface $em): Response
     {
         // return $this->render('accueil/index.html.twig', [
         //     'controller_name' => 'AccueilController',
         // ]);
 
-        $jobs = $JobsRepository->findBy([], ['id'=>'DESC'], 10);
+        $jobs =$em->getRepository->findBy([], ['id'=>'DESC'], 10);
             return $this->render('accueil/index.html.twig', [
             'jobs' => $jobs,
         ]);
     }
+
+
 }
