@@ -65,7 +65,6 @@ header form .container-header input {
 
 /* Laptop L 1440px ***********************/
 @media (min-width: 1440px) {
-   /* 01. Accueil ************************/
    header form .form-control {
       width: 15%;
    }

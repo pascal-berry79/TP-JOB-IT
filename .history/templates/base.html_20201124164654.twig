@@ -20,44 +20,40 @@
     <body>
 
         <!-- Header -->
-        <header> 
-            <form>
-                <div class="container-header">
-                    <h1 class="text-center">JOB-IT</h1>
-                    <input type="submit" value="Poster un job">
-                </div>
-                <input class="form-control" type="text" placeholder="Développeur...">
-            </form>  
-        </header>
-
-        <!-- Main -->
-        <main>
-            
-            <!-- Body content -->
-            {% block body %}{% endblock %}
-        </main>
-
-        <!-- Footer -->
-        <footer class="text-center bg-dark text-white p-5">
+        <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="/"><h1>Job IT</h1></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">A propros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">JOB-IT API</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Partenaires</a>
-                        </li>
-                    </ul>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/constructeurs">Constructeurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/voitures">Voitures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/voitures/create">Créer</a>
+                    </li>
                 </div>
             </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Body content -->
+            {% block body %}{% endblock %}
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center bg-dark text-white p-5">
+            <p class="m-0 p-small">Site réalisé par <a href="https://pascalberry.com">Pascal Berry</a> dans le cadre de la formation développeur web et web mobile - © 2020 - <a href="/admin">Administrer</a></p>
         </footer>
 
         <!-- Optional JavaScript -->

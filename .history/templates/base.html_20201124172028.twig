@@ -20,19 +20,18 @@
     <body>
 
         <!-- Header -->
-        <header> 
-            <form>
-                <div class="container-header">
-                    <h1 class="text-center">JOB-IT</h1>
-                    <input type="submit" value="Poster un job">
-                </div>
-                <input class="form-control" type="text" placeholder="Développeur...">
-            </form>  
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="https://job-it.com">
+                </form>
+            </nav>
         </header>
 
         <!-- Main -->
         <main>
-            
+            <a class="navbar-brand" href="/"><h1>Job IT</h1></a>
             <!-- Body content -->
             {% block body %}{% endblock %}
         </main>

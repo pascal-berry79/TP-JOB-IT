@@ -40,20 +40,13 @@ header form .container-header input {
 /*****************************************/
 /* Tablet 768px **************************/
 @media (min-width: 768px) {
-
-   /* 01. Accueil ************************/
-   header form .container-header {
-
+   header .container-header {
       display: flex;
       justify-content: space-between;
    }
    
-   header form .container-header input {
+   header .container-header input {
       margin: 0;
-   }
-
-   header form .form-control {
-      width: 30%;
    }
 
 }
@@ -65,8 +58,5 @@ header form .container-header input {
 
 /* Laptop L 1440px ***********************/
 @media (min-width: 1440px) {
-   /* 01. Accueil ************************/
-   header form .form-control {
-      width: 15%;
-   }
+
 }

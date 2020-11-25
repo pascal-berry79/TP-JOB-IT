@@ -21,40 +21,15 @@ Colors:
 /* 01. General Styles                    */
 /*****************************************/
 
-header {
-   padding: 5%;
+header{
+   padding: 10%;
 }
-
-header form .container-header {
-   padding: 2%;
-}
-
-header form .container-header input {
-   display: block;
-   margin: 0 auto;
-}
-
 
 /*****************************************/
 /* 0. Media Queries                      */
 /*****************************************/
 /* Tablet 768px **************************/
 @media (min-width: 768px) {
-
-   /* 01. Accueil ************************/
-   header form .container-header {
-
-      display: flex;
-      justify-content: space-between;
-   }
-   
-   header form .container-header input {
-      margin: 0;
-   }
-
-   header form .form-control {
-      width: 30%;
-   }
 
 }
 
@@ -65,8 +40,5 @@ header form .container-header input {
 
 /* Laptop L 1440px ***********************/
 @media (min-width: 1440px) {
-   /* 01. Accueil ************************/
-   header form .form-control {
-      width: 15%;
-   }
+
 }
