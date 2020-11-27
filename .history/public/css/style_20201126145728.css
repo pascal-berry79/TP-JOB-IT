@@ -90,6 +90,7 @@ main .jobs-accueil div span{
    main .jobs-accueil {
       display: flex;
       align-items: center;
+      padding: 1%;
    }
 
    main .jobs-accueil div {

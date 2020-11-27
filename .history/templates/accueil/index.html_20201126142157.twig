@@ -5,7 +5,7 @@
 {% block body %}
 
     {% for categorie in categories %}
-        <a href="{{ path('categories', {'nom' : categorie}) }}">{{categorie}}</a>
+        <a href="{{categorie}}">{{categorie}}</a>
         <hr>
         {% for job in jobs %}
             <div class="jobs-accueil">

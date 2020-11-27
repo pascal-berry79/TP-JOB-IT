@@ -5,9 +5,10 @@
 {% block body %}
 
     {% for categorie in categories %}
-        <a href="{{ path('categories', {'nom' : categorie}) }}">{{categorie}}</a>
+        <a href="{{ path('categories', {'id' : categorie.nom}) }}">{{categorie}}</a>
         <hr>
         {% for job in jobs %}
+            <p>Agence {{job.entreprise}}</p>
             <div class="jobs-accueil">
                 <img src="images/logos/{{job.logo}}" alt="Logo {{job.entreprise}}">
                 <div>

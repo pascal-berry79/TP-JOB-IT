@@ -41,6 +41,7 @@ header form .container-header input {
 
 main {
    padding: 1% 5%;
+   background-color: red;
 }
 
 main .jobs-accueil img {
@@ -58,8 +59,7 @@ main .jobs-accueil div ul {
 }
 
 main .jobs-accueil div span{
-   font-weight: bold;
-   font-size: 2em;
+   font-weight: bolder;
 }
 
 /*****************************************/

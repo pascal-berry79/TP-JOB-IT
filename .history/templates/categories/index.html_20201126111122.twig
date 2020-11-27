@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Job It - Categories{% endblock %}
+
+{% block body %}
+        <h2 class="text-center">Les Categories {{categorie.nom}}</h2>
+
+    <div class="categories-list">
+        {% for categorie in categories %}
+            <a href="/categories/{{categorie.nom}}"></a>
+        {% endfor %}
+    </div>
+{% endblock %}

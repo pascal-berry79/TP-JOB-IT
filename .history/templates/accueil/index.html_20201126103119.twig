@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Job It - Accueil{% endblock %}
+
+{% block body %}
+    {% for job in jobs %}
+        <a href="">Le test</a>
+        <hr>
+        <div class="jobs-accueil">
+            <img src="images/logos/{{job.logo}}" alt="Logo {{job.entreprise}}">
+            <div>
+                <p>Agence {{job.entreprise}}</p>
+                <span>{{job.metier}}</span>
+                <ul>
+                    <li>{{job.contrat}}</li>
+                    <li>{{job.lieu}}</li>
+                    <li>{{job.pays}}</li>
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

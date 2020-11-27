@@ -31,12 +31,9 @@ class AccueilController extends AbstractController
                 $tableau[]=$job->getCategory()->getNom();
             }
         }
-
         return $this->render('accueil/index.html.twig', [
-            // return du tableau
             'categories' => $tableau,
-            // return des jobs
-            'jobs' => $jobs
+            'jobs' => $jobs,
         ]);
     }
 }

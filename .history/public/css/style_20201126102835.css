@@ -57,9 +57,8 @@ main .jobs-accueil div ul {
    padding: 0;
 }
 
-main .jobs-accueil div span{
+main .jobs-accueil div {
    font-weight: bold;
-   font-size: 2em;
 }
 
 /*****************************************/

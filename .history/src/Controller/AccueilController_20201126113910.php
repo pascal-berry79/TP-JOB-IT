@@ -18,25 +18,18 @@ class AccueilController extends AbstractController
     public function index(JobsRepository $JobsRepository, CategoriesRepository $CategoriesRepository, EntityManagerInterface $em): Response
     {
         
-        // Requête des jobs
         $jobs = $JobsRepository->findBy([], ['id'=>'DESC'], 10);
+            return $this->render('accueil/index.html.twig', [
+            'jobs' => $jobs,
+        ]);
 
-        // Requête des Catégories
         $categories = $CategoriesRepository->findAll();
-        $tableau = array();
+        $arraycat = array();
         foreach($jobs as $job){
-
-            // Si il n'est pas dans le tableau, recupérer le nom de la catégorie recherchée
-            if(!in_array($job->getCategory()->getNom(),$tableau)){
-                $tableau[]=$job->getCategory()->getNom();
+            // Si pas dans le tableau, recupérer le nom de la catégorie recherchée
+            if(!in_array($job->getCategory()->getNom(),$arraycat)){
+                $arraycat[]=$job->getCategory()->getNom();
             }
         }
-
-        return $this->render('accueil/index.html.twig', [
-            // return du tableau
-            'categories' => $tableau,
-            // return des jobs
-            'jobs' => $jobs
-        ]);
     }
 }

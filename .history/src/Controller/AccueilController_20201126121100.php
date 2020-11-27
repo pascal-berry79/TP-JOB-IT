@@ -18,9 +18,10 @@ class AccueilController extends AbstractController
     public function index(JobsRepository $JobsRepository, CategoriesRepository $CategoriesRepository, EntityManagerInterface $em): Response
     {
         
-        // Requête des jobs
+        // Requête des job
         $jobs = $JobsRepository->findBy([], ['id'=>'DESC'], 10);
 
+        
         // Requête des Catégories
         $categories = $CategoriesRepository->findAll();
         $tableau = array();
@@ -31,12 +32,8 @@ class AccueilController extends AbstractController
                 $tableau[]=$job->getCategory()->getNom();
             }
         }
-
         return $this->render('accueil/index.html.twig', [
-            // return du tableau
-            'categories' => $tableau,
-            // return des jobs
-            'jobs' => $jobs
+            'jobs' => $jobs,
         ]);
     }
 }

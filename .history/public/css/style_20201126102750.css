@@ -57,11 +57,6 @@ main .jobs-accueil div ul {
    padding: 0;
 }
 
-main .jobs-accueil div span{
-   font-weight: bold;
-   font-size: 2em;
-}
-
 /*****************************************/
 /* 0. Media Queries                      */
 /*****************************************/
